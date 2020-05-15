@@ -9,7 +9,7 @@ final class AdherentTest extends TestCase {
     public function testCanBeCreated() {
         $this->assertInstanceOf(
             Adherent::class, 
-            new Adherent('Yann','Truchot',new DateTime('1998-03-06'))
+            new Adherent('Yann', 'Truchot', new DateTime('1998-03-06'))
         );
     }
 
@@ -17,7 +17,7 @@ final class AdherentTest extends TestCase {
     public function testConcatenate() {
         $this->assertEquals(
             "YannTruchot1998-03-06",
-            Adherent::concatenate('Yann','Truchot',new DateTime('1998-03-06'))
+            Adherent::concatenate('Yann', 'Truchot', new DateTime('1998-03-06'))
         );
     }
 
