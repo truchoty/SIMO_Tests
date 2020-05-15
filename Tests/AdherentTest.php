@@ -25,7 +25,7 @@ final class AdherentTest extends TestCase {
     public function testCapitalisation() {
         $this->assertEquals(
             "YANNTRUCHOT1998-03-06",
-            Adherent::concatenate('Yann', 'Truchot', new DateTime('1998-03-06'))
+            Adherent::capitalisation('Yann', 'Truchot', new DateTime('1998-03-06'))
         );
     }
 
