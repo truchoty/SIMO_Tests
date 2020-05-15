@@ -29,4 +29,12 @@ final class AdherentTest extends TestCase {
         );
     }
 
+    // Test 4 
+    public function testSkipAccents() {
+        $this->assertEquals(
+            "YANNTRUCHOT1998-03-06",
+            Adherent::skip_accents('Yànn', 'Trüchôt', new DateTime('1998-03-06'))
+        );
+    }
+
 }
