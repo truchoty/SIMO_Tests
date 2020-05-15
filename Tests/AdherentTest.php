@@ -21,4 +21,12 @@ final class AdherentTest extends TestCase {
         );
     }
 
+    // Test 3
+    public function testCapitalisation() {
+        $this->assertEquals(
+            "YANNTRUCHOT1998-03-06",
+            Adherent::concatenate('Yann', 'Truchot', new DateTime('1998-03-06'))
+        );
+    }
+
 }
